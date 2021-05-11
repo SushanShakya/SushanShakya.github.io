@@ -100,3 +100,8 @@ img{
    width: 50px;
    margin-right: 10px;
 }
+.banner:hover {
+   transform: scale(1.2);
+   overflow: hidden;
+   transition: 0.3s;
+}
