@@ -40,13 +40,13 @@ body {
 	border-bottom: solid 2px #4fc3f7;
 }
 .social{
-	position: absolute;
+	position: fixed;
 	bottom: 40px;
 	right: 40px;
 }
 .social_btn{
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	color: #fff;
 	background-size: contain;
    margin-top: 20px;
@@ -60,16 +60,55 @@ body {
 .linkedin{
 	background-image: url('lin.png');
 }
-.companies{
-	position: absolute;
+.github{
+	background-image: url('github.png');
+}
+.social a{
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+	font-family: 'Fira Code', monospace;
+}
+.social a div{
+   margin-right: 10px;
+   padding-top: 20px;
+}
+.social-text {
+   opacity: 0;
+   transition: 0.4s;
+}
+   
+.companies-main{
+	position: fixed;
    top: 50px;
    right: 50px;
    display: flex;
+   flex-direction: column;
 }
-.logo{
-	position: absolute;
+.companies{
+   display: flex;
+   border-bottom: solid 2px #fff;
+   padding-bottom: 10px;
+}
+#company-text{
+   margin-top: 10px;
+}
+.logo-main{
+	position: fixed;
    top: 50px;
    left: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.logo{
+   border-bottom: solid 2px #fff;
+   padding-bottom: 10px;
+}
+#logo-text{
+   margin-top: 10px;
 }
 .company {
    height: 50px;
@@ -90,10 +129,11 @@ img{
    object-fit: contain;
 }
 .skills{
-   position: absolute;
-   bottom: 20px;
-   left: 20px;
+   position: fixed;
+   bottom: 30px;
+   left: 30px;
    display: flex;
+   flex-direction: column;
 }
 .skill{
    height: 50px;
@@ -104,4 +144,14 @@ img{
    transform: scale(1.2);
    overflow: hidden;
    transition: 0.3s;
+}
+#skill-text {
+   margin-bottom: 10px;
+}
+.skills-main {
+   display: flex;
+   align-items:center;
+   justify-content:center;
+   border-top: solid 2px #fff;
+   padding-top: 10px;
 }
