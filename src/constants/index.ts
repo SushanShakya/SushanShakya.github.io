@@ -13,6 +13,7 @@ import {
   bens,
   bysst,
   creator,
+  django,
   fb,
   figma,
   flutter,
@@ -29,7 +30,9 @@ import {
   linux,
   lmu,
   maghao,
+  manoj,
   medium,
+  mynewearth,
   myra,
   nazeekai,
   prasid,
@@ -37,12 +40,14 @@ import {
   raralabs,
   reactjs,
   redux,
-  rubina,
+  rimes,
+  roads,
   smartforce,
+  suman,
   typescript,
   vim,
   warpedBloc,
-  younginnov
+  younginnov,
 } from "../assets";
 
 
@@ -85,6 +90,7 @@ const services: TService[] = [
 ];
 
 const technologies: TTechnology[] = [
+
   {
     name: "Flutter",
     icon: flutter,
@@ -92,6 +98,10 @@ const technologies: TTechnology[] = [
   {
     name: "React Native",
     icon: reactjs,
+  },
+  {
+    name: "Django",
+    icon: django,
   },
   {
     name: "Python",
@@ -133,11 +143,34 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
+    "title": "Senior Software Craftsman",
+    "companyName": "MyNewEarth",
+    "icon": mynewearth, // Placeholder
+    "iconBg": "#F5909E", // Placeholder
+    "date": "Jan 2025 - Present",
+    "points": [
+      "Develop a holistic platform for wellness practitioners",
+      "Create standards for coding practices",
+    ]
+  },
+  {
+    "title": "Full Stack Developer Consultant",
+    "companyName": "RIMES",
+    "icon": rimes, // Placeholder
+    "iconBg": "#fff", // Placeholder
+    "date": "June 2024 - July 2025",
+    "points": [
+      "Led development of nationwide Decision Support System for Department of Roads, Nepal",
+      "Trained 100+ Road Engineers on usage of data systems",
+      "Responsible for stakeholder meetings and entire product development cycle",
+    ]
+  },
+  {
     "title": "Software Craftsman",
     "companyName": "Rara Labs",
     "icon": raralabs, // Placeholder
     "iconBg": "#2B2B2B", // Placeholder
-    "date": "August 2022 - Present",
+    "date": "August 2022 - June 2024",
     "points": [
       "Initiator of Clean Architecture and TDD practices",
       "Interviewed potential candidates for mobile development positions",
@@ -145,7 +178,7 @@ const experiences: TExperience[] = [
       "Investigated topics like reflection while researching the Go language",
       "Cleaned up messy and duplicated code in JavaScript",
       "Automated daily workflow for APK distribution",
-      "Created technical content" 
+      "Created technical content"
     ]
   },
   {
@@ -168,7 +201,7 @@ const experiences: TExperience[] = [
     "date": "May 2020 - Present",
     "points": [
       "Developed multiple types of projects including E-commerce, Hotel Booking, CRMs",
-      "Collaborated directly or indirectly with companies like Xtraviz, Longtail e-media, Hi-foods, Smartforce, YBC Cleaning, and more", 
+      "Collaborated directly or indirectly with companies like Xtraviz, Longtail e-media, Hi-foods, Smartforce, YBC Cleaning, and more",
       "Managed outsourced small scale Full Stack Mobile App. Development projects"
     ]
   },
@@ -232,14 +265,14 @@ const experiences: TExperience[] = [
     "date": "May 2020 - September 2020",
     "points": [
       "Modified existing software to improve performance",
-      "Refactored code and used state management techniques to clean up the code", 
+      "Refactored code and used state management techniques to clean up the code",
       "Designed and created user interface and connected it to the backend",
       "Fixed bugs in the existing code"
     ]
   },
   {
-    "title": "Software Engineering Intern", 
-    "companyName": "Incwell", 
+    "title": "Software Engineering Intern",
+    "companyName": "Incwell",
     "icon": incwell, // Placeholder 
     "iconBg": "#fff", // Placeholder
     "date": "February 2020 - May 2020",
@@ -249,10 +282,10 @@ const experiences: TExperience[] = [
       "Redesigned an existing app with Flutter",
       "Built software for an event called Cosmo-Concepts"
     ]
-  } ,
+  },
   {
-    "title": "Technical Support", 
-    "companyName": "IMS", 
+    "title": "Technical Support",
+    "companyName": "IMS",
     "icon": ims, // Placeholder 
     "iconBg": "#fff", // Placeholder
     "date": "May 2019 - Aug 2019",
@@ -261,10 +294,26 @@ const experiences: TExperience[] = [
       "Accomplished Data Backup for customers",
       "Completed Yearly Closing for Multiple Companies"
     ]
-  } 
-] ;
+  }
+];
 
 const testimonials: TTestimonial[] = [
+  {
+    testimonial:
+      "Sushan's inquisitive nature, explorative attitude, and dedication to learning make it a pleasure to work with him. His curiosity and passion for discovery are trully inspiring.",
+    name: "Suman Baral",
+    designation: "Project Management and Land Administration Specialist",
+    company: "The World Bank",
+    image: suman,
+  },
+  {
+    testimonial:
+      "He is fast, gets the quality work done but more than that, gets it done in style. He has a solid understanding of software architecture, design patterns and can produce testable units of work",
+    name: "Manoj Ghimire",
+    designation: "Co-founder/CEO",
+    company: "Rara Labs",
+    image: manoj,
+  },
   {
     testimonial:
       "He's been instrumental in projects with national and international clients, consistently delivering clean code that's a breeze to work with.",
@@ -273,17 +322,43 @@ const testimonials: TTestimonial[] = [
     company: "Niural",
     image: prasid,
   },
-  {
-    testimonial:
-      "I can confidently say that he is an exceptional Flutter developer and a well-rounded individual.",
-    name: "Rubina Acharaya",
-    designation: "UI/UX Designer",
-    company: "RARA Labs",
-    image: rubina,
-  },
+  // {
+  //   testimonial:
+  //     "What truly sets Sushan apart is his collaborative spirit. ",
+  //   name: "Ishwor Luitel",
+  //   designation: "Data Analyst",
+  //   company: "Therapy Focus",
+  //   image: ishwor,
+  // },
 ];
 
 const projects: TProject[] = [
+  {
+    "name": "MyNewEarth",
+    "description": "A holistic platform for wellness experts",
+    "tags": [
+      { "name": "Python", "color": "green-text-gradient" },
+      { "name": "Postgres", "color": "blue-text-gradient" },
+      { "name": "Flutter", "color": "green-text-gradient" },
+      { "name": "AWS", "color": "blue-text-gradient" },
+      { "name": "Heroku", "color": "green-text-gradient" },
+    ],
+    "image": mynewearth, // Placeholder
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.conscialink.conscialinkapp&hl=en",
+    "appStoreLink": "https://apps.apple.com/us/app/mynewearth/id6447554498"
+  },
+  {
+    "name": "NAVIGATE DSS",
+    "description": "Decision Support System built for Department of Roads, Nepal",
+    "tags": [
+      { "name": "Postgres", "color": "blue-text-gradient" },
+      { "name": "PHP", "color": "green-text-gradient" },
+      { "name": "Angular", "color": "blue-text-gradient" },
+      { "name": "Python", "color": "green-text-gradient" }
+    ],
+    "image": roads, // Placeholder
+    "sourceCodeLink": "https://navigate.dor.gov.np/",
+  },
   {
     "name": "Hafnia Analytics Software",
     "description": "Analytics software used by pool partners of Hafnia (a subsidiary of BW Group) to track and analyze data.",
@@ -304,7 +379,7 @@ const projects: TProject[] = [
       { "name": "StateManagement", "color": "pink-text-gradient" }
     ],
     "image": warpedBloc, // Placeholder
-    "sourceCodeLink": "https://pub.dev/packages/warped_bloc" 
+    "sourceCodeLink": "https://pub.dev/packages/warped_bloc"
   },
   {
     "name": "Flutter Architecture Generator",
@@ -322,7 +397,7 @@ const projects: TProject[] = [
     "description": "Mobile banking system developed for SACOOS (NEFSCUN Project), providing users with convenient financial services.",
     "tags": [
       { "name": "Flutter", "color": "blue-text-gradient" },
-      { "name": "MobileBanking", "color": "orange-text-gradient" } 
+      { "name": "MobileBanking", "color": "orange-text-gradient" }
     ],
     "image": myra, // Placeholder
     "playStoreLink": "https://play.google.com/store/apps/details?id=myra.erp.app",
@@ -383,7 +458,7 @@ const socials: TSocial[] = [
     icon: medium,
     link: "https://medium.com/@sushaanshakya88",
   },
-  
+
 ]
 export { experiences, projects, services, socials, technologies, testimonials };
 

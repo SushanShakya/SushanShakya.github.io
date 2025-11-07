@@ -67,7 +67,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I am a skilled Software Craftsman specializing in mobile application development. I am proficient in various programming languages and frameworks, including Flutter, React Native, Python, and JavaScript/TypeScript. I emphasize principles and practices over specific technologies, demonstrating my adaptability and commitment to quality. I have experience working in diverse environments, from startups to established companies, and excel in team leadership, project management, and delivering results under pressure.`,
+      content: `I am a skilled Software Craftsman specializing in Full Stack Mobile Application Development who believes that principles and practices are far more important than chasing shiny technology.`,
     },
     experience: {
       p: "What I have done so far",
